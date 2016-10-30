@@ -14,7 +14,7 @@
 		FF4740BD1DC695C9004DF4C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4740BC1DC695C9004DF4C9 /* Alamofire.framework */; };
 		FF4740C11DC69629004DF4C9 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4740C01DC69629004DF4C9 /* NetworkingTests.swift */; };
 		FF4740C21DC69665004DF4C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4740BC1DC695C9004DF4C9 /* Alamofire.framework */; };
-		FF4740C41DC696A5004DF4C9 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF4740BC1DC695C9004DF4C9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF4740CD1DC6B40B004DF4C9 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF4740BC1DC695C9004DF4C9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FF4740C31DC6969B004DF4C9 /* CopyFiles */ = {
+		FF4740CC1DC6B403004DF4C9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FF4740C41DC696A5004DF4C9 /* Alamofire.framework in CopyFiles */,
+				FF4740CD1DC6B40B004DF4C9 /* Alamofire.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,6 @@
 				FF4740991DC694AB004DF4C9 /* Frameworks */,
 				FF47409A1DC694AB004DF4C9 /* Headers */,
 				FF47409B1DC694AB004DF4C9 /* Resources */,
-				FF4740BF1DC695DD004DF4C9 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,8 +158,7 @@
 			buildPhases = (
 				FF4740A21DC694AB004DF4C9 /* Sources */,
 				FF4740A31DC694AB004DF4C9 /* Frameworks */,
-				FF4740A41DC694AB004DF4C9 /* Resources */,
-				FF4740C31DC6969B004DF4C9 /* CopyFiles */,
+				FF4740CC1DC6B403004DF4C9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -222,32 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF4740A41DC694AB004DF4C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		FF4740BF1DC695DD004DF4C9 /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF4740981DC694AB004DF4C9 /* Sources */ = {
