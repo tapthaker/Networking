@@ -9,5 +9,6 @@ then
 fi
 if [ $1 == "build" ]
 then
+    rm -rf Carthage/Build/iOS
     carthage build --no-skip-current --platform iOS
 fi
