@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash -e
+
+export PATH=$PATH:/usr/local/bin
 
 if [ $1 == "test" ]
 then
