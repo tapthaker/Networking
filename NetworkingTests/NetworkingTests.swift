@@ -46,5 +46,19 @@ class NetworkingTests: XCTestCase {
 
         XCTAssertTrue(response?.isLeft() ?? false)
     }
+
+    func testPostSuccessWithGetMethod() {
+        let postSuccessExpectation = expectation(description: "Post success")
+        var response: Either<[String : Any], NetworkError>?
+        apiClient.request(url: "https://httpbin.org/post", params: ["foo" : "bar"], method: .get) { (resp) in
+            response = resp
+            postSuccessExpectation.fulfill()
+        }
+        self.waitForExpectations(timeout: 5, handler: nil)
+
+        XCTAssertTrue(response?.isLeft() ?? false)
+        
+    }
+
     
 }
